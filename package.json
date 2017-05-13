@@ -1,0 +1,52 @@
+{
+  "name": "bimage",
+  "version": "0.0.0-aplha1",
+  "description": "Better new Image",
+  "main": "dist/bimage.min.js",
+  "module": "dist/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Roman Masyhar",
+    "email": "mhrohman@live.com",
+    "url": "https://github.com/rohmanhm"
+  },
+  "repository": "rohmanhm/bimage",
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "test": "jest --forceExit"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.41",
+    "@types/jest": "^19.2.3",
+    "@types/mem": "^1.1.2",
+    "@types/node": "^7.0.18",
+    "jest": "^20.0.1",
+    "rollup": "^0.41.6",
+    "rollup-plugin-butternut": "^0.1.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "ts-jest": "^20.0.3",
+    "tslint": "^5.2.0",
+    "tslint-config-standard": "^5.0.2",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "mem": "^1.1.0"
+  },
+  "jest": {
+    "verbose": true,
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__test__/**/*.test.(ts|js)"
+    ]
+  }
+}
